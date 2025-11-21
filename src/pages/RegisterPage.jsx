@@ -21,7 +21,7 @@ export default function RegisterPage() {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      await api.post("/api/auth/register", form);
+      await api.post("/auth/register", form);
       navigate("/login");
     } catch (err) {
       setError("Registration failed. Username may be taken.");

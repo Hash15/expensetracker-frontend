@@ -12,7 +12,7 @@ export default function DashboardPage() {
 
   const loadTransactions = async () => {
     try {
-      const res = await api.get("/api/transactions");
+      const res = await api.get("/transactions");
       setTransactions(res.data);
     } catch {
       navigate("/login");

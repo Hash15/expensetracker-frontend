@@ -9,7 +9,7 @@ export default function AddTransactionForm({ onAdd }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    await api.post("/api/transactions", {
+    await api.post("/transactions", {
       description,
       amount: parseFloat(amount),
       date: new Date().toISOString().slice(0, 10),

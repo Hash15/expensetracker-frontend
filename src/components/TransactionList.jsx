@@ -4,7 +4,7 @@ import api from "../api/axiosClient";
   
   export default function TransactionList({ transactions, onDelete }) {
     const remove = async (id) => {
-      await api.delete(`/api/transactions/${id}`);
+      await api.delete(`/transactions/${id}`);
       onDelete();
     };
   
