@@ -1,5 +1,5 @@
 export default async function handler(req, res) {
-    const backendURL = "http://expensetracker-env.eba-pxxfnkz2.ap-southeast-2.elasticbeanstalk.com";
+    const backendURL = "http://3.27.111.79";
   
     const target = backendURL + req.url; // forward same path
   
